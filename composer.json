@@ -1,0 +1,20 @@
+{
+    "name": "thebeline/php-fill_defaults-lib",
+    "description": "Apply default values to an array of unknown values.",
+	"type": "library",
+    "keywords": ["functions","utilities","parameters","defaults"],
+    "homepage": "https://github.com/thebeline/php-fill_defaults-lib",
+    "license": "MIT",
+	"support": {
+		"issues": "https://github.com/thebeline/php-fill_defaults-lib/issues",
+		"source": "https://github.com/thebeline/php-fill_defaults-lib/"
+	},
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "files": {
+            "src/fill_defaults.function.php"
+        }
+    }
+}
