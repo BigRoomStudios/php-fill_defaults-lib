@@ -18,7 +18,9 @@
  */
 function fill_defaults(Array $values, Array $defaults) {
 	foreach($defaults as $key => $default) {
-		if(!isset($values[$key])) {
+		if(is_array($default)) {
+			$values[$key] = fill_defaults((array) $values[$key], $default);
+		} else if(!isset($values[$key])) {
 			$values[$key] = $default;
 		}
 	}
